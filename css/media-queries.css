@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+:root
+{
+	--corLilas: #c8a2c8;
+	--corBranco: #ffffff;
+	--corVerde: #008000;	
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+	
+	body
+	{
+		background-image: linear-gradient(to top, var(--corVerde), var(--corLilas));
+	}
+	
+	#login
+	{
+		width: 90%;
+		display: flex;
+	}
+	
+	#imagem
+	{
+		width: 30%;
+		height: 100%;
+		background-position: center center;		
+	}
+	
+}
+
+@media screen and (min-width: 992px)
+{
+	
+	body
+	{
+		background-image: linear-gradient(to top, var(--corVerde), var(--corLilas));
+	}
+	
+	#login
+	{
+		width: 90%;
+		display: flex;
+	}
+	
+	#imagem
+	{
+		width: 50%;
+		height: 100%;
+		background-position: center center;		
+	}
+	
+}

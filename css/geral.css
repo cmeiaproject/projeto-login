@@ -37,6 +37,9 @@ main
 	width: 250px;	
 	overflow: hidden;
 	box-shadow: 3px 3px 3px; 
+	
+	transition: width 0.3s, height .3s;
+	transition-timing-function: ease;
 }
 
 #imagem
