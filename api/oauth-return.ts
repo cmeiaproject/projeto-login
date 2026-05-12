@@ -3,7 +3,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const appOrigin = process.env.OAUTH_APP_ORIGIN || (() => {
     const host = req.headers.host;
-    if (!host) return 'https://oxeoauth.vercel.app';
+    if (!host) return 'https://oxeoauth.vercel.app/api';
     const protocol = req.headers['x-forwarded-proto'] || 'https';
     return `${protocol}://${host}`;
   })();
